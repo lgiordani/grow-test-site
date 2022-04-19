@@ -1,0 +1,3 @@
+path: /courses/{collection.root}/{base}/index.html
+view: /views/section.html
+title: Section page

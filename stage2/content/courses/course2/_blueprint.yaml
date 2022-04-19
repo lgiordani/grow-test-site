@@ -1,0 +1,3 @@
+path: /courses/{collection.basename}/{base}/index.html
+view: /views/module.html
+title: Module page

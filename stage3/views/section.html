@@ -1,0 +1,14 @@
+{% extends "/views/base.html" %}
+
+{% block title %}{{ doc.title }} - {{ doc.collection.basename }} - {{ podspec.title }}{% endblock %}
+
+{% block content %}
+{{ doc.html | safe }}
+
+{% if doc.prev() %}
+<p><a href="{{ doc.prev().url.path }}">Previous section: {{ doc.prev().title }}</a></p>
+{% endif %}
+{% if doc.next() %}
+<p><a href="{{ doc.next().url.path }}">Next section: {{ doc.next().title }}</a></p>
+{% endif %}
+{% endblock %}

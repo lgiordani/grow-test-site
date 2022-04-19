@@ -1,0 +1,3 @@
+path: /courses/{base}/index.html
+view: /views/course.html
+title: Course page
