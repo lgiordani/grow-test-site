@@ -11,4 +11,5 @@
 {% if doc.next() %}
 <p><a href="{{ doc.next().url.path }}">Next section: {{ doc.next().title }}</a></p>
 {% endif %}
+<p><a href="{{ g.collection(doc.collection.dirname).get_doc(doc.collection.basename).url.path }}">Back to the module page</a></p>
 {% endblock %}

@@ -1,6 +1,7 @@
 {
   "/content/courses/course1.md": [
-    "/content/courses/course1.md"
+    "/content/courses/course1.md",
+    "/content/pages/index.md"
   ],
   "/content/courses/course2.md": [
     "/content/courses/course2.md"

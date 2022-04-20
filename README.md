@@ -78,6 +78,20 @@ The site contained in `stage1` implements requirements 1.* and requirements 2.1,
 
 Nothing specific to mention, everything went smooth.
 
+**UPDATE**
+
+Using https://github.com/grow/grow/pull/1202 I was able to change `/content/courses/_blueprint.yaml` from
+
+```yaml
+path: /courses/{base}/index.html
+```
+
+to
+
+```yaml
+path: /{collection.path}/{base}/index.html
+```
+
 ### Issues
 
 #### Issue 1
@@ -117,9 +131,25 @@ The site contained in `stage2` adds the implementation of requirements 2.2, 3.1,
    4. ~~The page contains a link to the course page.~~
    5. ~~The page has its own template.~~
 
+**UPDATE**
+
+Using https://github.com/grow/grow/pull/1202 I was able to change the module blueprints from
+
+```yaml
+path: /courses/{collection.basename}/{base}/index.html
+```
+
+to
+
+```yaml
+path: /{collection.path}/{base}/index.html
+```
+
+as I did in stage 1. This allows to avoid hardcoding `courses` in the blueprint.
+
 ### Issues
 
-#### Issue 1
+#### Issue 1 (SOLVED)
 
 To implement the link that goes back to the course I found the following solution
 
@@ -129,6 +159,16 @@ To implement the link that goes back to the course I found the following solutio
 
 as `doc.collection.basename` is `course1` which is the name of the document that contains information about the course.
 This is not wrong but it feels complicated to use `get_doc(doc.collection.basename)`, and I wonder if there is a simpler way to achieve the same effect.
+
+**UPDATE**
+
+This can be solved using https://github.com/grow/grow/pull/1202. The view can now contain
+
+```jinja
+<p><a href="{{ g.collection(doc.collection.dirname).get_doc(doc.collection.basename).url.path }}">Back to the course page</a></p>
+```
+
+which doesn't hardcode the value `courses` any more.
 
 #### Issue 2
 
@@ -226,7 +266,7 @@ The site contained in `stage3` adds the implementation of requirements 3.2, 4.1,
 
 The issue number 3 mentioned in stage 2 becomes annoying here: there is a file `_blueprint.yaml` for each module of each course. Having a nested blueprint would partially solve the issue, as I would need to create one for each course (one for the sections of each module in `course1` and one for the sections of each module in `course2`), but would mitigate the problem.
 
-#### Issue 2
+#### Issue 2 (SOLVED)
 
 I couldn't implement requirement 4.2. Using
 
@@ -250,7 +290,15 @@ path: /courses/course1/{collection.basename}/{base}/index.html
 
 but while this is possible it feels like a missing opportunity for automation. After all the path `/courses/course1/module1` is known to Grow. Previously, this was easily solved explicitly using the prefix `/courses` but this is actually already something that the system might know automatically.
 
-#### Issue 3
+**UPDATE**
+
+This can be solved using https://github.com/grow/grow/pull/1202. The blueprint is the same I used for courses and modules
+
+```yaml
+path: /{collection.path}/{base}/index.html
+```
+
+#### Issue 3 (SOLVED)
 
 I couldn't implement requirement 4.4. In `views/section.html` I should use
 
@@ -259,6 +307,14 @@ I couldn't implement requirement 4.4. In `views/section.html` I should use
 ```
 
 where COURSE is `courses/course1` for sections of modules in course 1 and `courses/course2` for sections of modules in course 2. Unfortunately `doc.collection.collection_path` returns `courses/course1/module1` and `doc.collection.basename` returns `module1`. I couldn't find any way to get `courses/course1` programmatically.
+
+**UPDATE**
+
+This can be solved using https://github.com/grow/grow/pull/1202. The view is now
+
+```jinja
+<p><a href="{{ g.collection(doc.collection.dirname).get_doc(doc.collection.basename).url.path }}">Back to the module page</a></p>
+```
 
 ## Conclusions
 

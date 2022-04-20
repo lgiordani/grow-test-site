@@ -27,6 +27,32 @@
           "pod_path": "/content/courses/course1/module1.md"
         }
       },
+      "/courses/course1/module1/section1/index.html": {
+        "options": {},
+        "value": {
+          "hashed": "a524119279c135ef659190938dfe46e2241e6cf5811a5eed30026a2c60644642",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/courses/course1/module1",
+            "locale": "en",
+            "pod_path": "/content/courses/course1/module1/section1.md"
+          },
+          "pod_path": "/content/courses/course1/module1/section1.md"
+        }
+      },
+      "/courses/course1/module1/section2/index.html": {
+        "options": {},
+        "value": {
+          "hashed": "f06100f055580851ed47d3d498bc235fa42e4af8a3189328673e07789fb767b2",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/courses/course1/module1",
+            "locale": "en",
+            "pod_path": "/content/courses/course1/module1/section2.md"
+          },
+          "pod_path": "/content/courses/course1/module1/section2.md"
+        }
+      },
       "/courses/course1/module2/index.html": {
         "options": {},
         "value": {
@@ -38,6 +64,32 @@
             "pod_path": "/content/courses/course1/module2.md"
           },
           "pod_path": "/content/courses/course1/module2.md"
+        }
+      },
+      "/courses/course1/module2/section1/index.html": {
+        "options": {},
+        "value": {
+          "hashed": "62596bdc9669ae177dc9a9468daa13194dde8537c39a2c8727ae41b9bbe43a07",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/courses/course1/module2",
+            "locale": "en",
+            "pod_path": "/content/courses/course1/module2/section1.md"
+          },
+          "pod_path": "/content/courses/course1/module2/section1.md"
+        }
+      },
+      "/courses/course1/module2/section2/index.html": {
+        "options": {},
+        "value": {
+          "hashed": "36724d71f9c0b8d610393479efc7800a26e574312e9e8d89bba434dc47c6a0e5",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/courses/course1/module2",
+            "locale": "en",
+            "pod_path": "/content/courses/course1/module2/section2.md"
+          },
+          "pod_path": "/content/courses/course1/module2/section2.md"
         }
       },
       "/courses/course2/index.html": {
@@ -79,58 +131,6 @@
           "pod_path": "/content/courses/course2/module2.md"
         }
       },
-      "/courses/module1/section1/index.html": {
-        "options": {},
-        "value": {
-          "hashed": "a524119279c135ef659190938dfe46e2241e6cf5811a5eed30026a2c60644642",
-          "kind": "doc",
-          "meta": {
-            "collection_path": "/content/courses/course1/module1",
-            "locale": "en",
-            "pod_path": "/content/courses/course1/module1/section1.md"
-          },
-          "pod_path": "/content/courses/course1/module1/section1.md"
-        }
-      },
-      "/courses/module1/section2/index.html": {
-        "options": {},
-        "value": {
-          "hashed": "f06100f055580851ed47d3d498bc235fa42e4af8a3189328673e07789fb767b2",
-          "kind": "doc",
-          "meta": {
-            "collection_path": "/content/courses/course1/module1",
-            "locale": "en",
-            "pod_path": "/content/courses/course1/module1/section2.md"
-          },
-          "pod_path": "/content/courses/course1/module1/section2.md"
-        }
-      },
-      "/courses/module2/section1/index.html": {
-        "options": {},
-        "value": {
-          "hashed": "62596bdc9669ae177dc9a9468daa13194dde8537c39a2c8727ae41b9bbe43a07",
-          "kind": "doc",
-          "meta": {
-            "collection_path": "/content/courses/course1/module2",
-            "locale": "en",
-            "pod_path": "/content/courses/course1/module2/section1.md"
-          },
-          "pod_path": "/content/courses/course1/module2/section1.md"
-        }
-      },
-      "/courses/module2/section2/index.html": {
-        "options": {},
-        "value": {
-          "hashed": "36724d71f9c0b8d610393479efc7800a26e574312e9e8d89bba434dc47c6a0e5",
-          "kind": "doc",
-          "meta": {
-            "collection_path": "/content/courses/course1/module2",
-            "locale": "en",
-            "pod_path": "/content/courses/course1/module2/section2.md"
-          },
-          "pod_path": "/content/courses/course1/module2/section2.md"
-        }
-      },
       "/index.html": {
         "options": {},
         "value": {
@@ -148,32 +148,6 @@
   },
   "dynamic": {
     "dev": {
-      "/courses/None/section1/index.html": {
-        "options": {},
-        "value": {
-          "hashed": "a524119279c135ef659190938dfe46e2241e6cf5811a5eed30026a2c60644642",
-          "kind": "doc",
-          "meta": {
-            "collection_path": "/content/courses/course1/module1",
-            "locale": "en",
-            "pod_path": "/content/courses/course1/module1/section1.md"
-          },
-          "pod_path": "/content/courses/course1/module1/section1.md"
-        }
-      },
-      "/courses/None/section2/index.html": {
-        "options": {},
-        "value": {
-          "hashed": "f06100f055580851ed47d3d498bc235fa42e4af8a3189328673e07789fb767b2",
-          "kind": "doc",
-          "meta": {
-            "collection_path": "/content/courses/course1/module1",
-            "locale": "en",
-            "pod_path": "/content/courses/course1/module1/section2.md"
-          },
-          "pod_path": "/content/courses/course1/module1/section2.md"
-        }
-      },
       "/courses/course1/index.html": {
         "options": {},
         "value": {
@@ -200,6 +174,32 @@
           "pod_path": "/content/courses/course1/module1.md"
         }
       },
+      "/courses/course1/module1/section1/index.html": {
+        "options": {},
+        "value": {
+          "hashed": "a524119279c135ef659190938dfe46e2241e6cf5811a5eed30026a2c60644642",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/courses/course1/module1",
+            "locale": "en",
+            "pod_path": "/content/courses/course1/module1/section1.md"
+          },
+          "pod_path": "/content/courses/course1/module1/section1.md"
+        }
+      },
+      "/courses/course1/module1/section2/index.html": {
+        "options": {},
+        "value": {
+          "hashed": "f06100f055580851ed47d3d498bc235fa42e4af8a3189328673e07789fb767b2",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/courses/course1/module1",
+            "locale": "en",
+            "pod_path": "/content/courses/course1/module1/section2.md"
+          },
+          "pod_path": "/content/courses/course1/module1/section2.md"
+        }
+      },
       "/courses/course1/module2/index.html": {
         "options": {},
         "value": {
@@ -211,6 +211,32 @@
             "pod_path": "/content/courses/course1/module2.md"
           },
           "pod_path": "/content/courses/course1/module2.md"
+        }
+      },
+      "/courses/course1/module2/section1/index.html": {
+        "options": {},
+        "value": {
+          "hashed": "62596bdc9669ae177dc9a9468daa13194dde8537c39a2c8727ae41b9bbe43a07",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/courses/course1/module2",
+            "locale": "en",
+            "pod_path": "/content/courses/course1/module2/section1.md"
+          },
+          "pod_path": "/content/courses/course1/module2/section1.md"
+        }
+      },
+      "/courses/course1/module2/section2/index.html": {
+        "options": {},
+        "value": {
+          "hashed": "36724d71f9c0b8d610393479efc7800a26e574312e9e8d89bba434dc47c6a0e5",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/courses/course1/module2",
+            "locale": "en",
+            "pod_path": "/content/courses/course1/module2/section2.md"
+          },
+          "pod_path": "/content/courses/course1/module2/section2.md"
         }
       },
       "/courses/course2/index.html": {
@@ -250,110 +276,6 @@
             "pod_path": "/content/courses/course2/module2.md"
           },
           "pod_path": "/content/courses/course2/module2.md"
-        }
-      },
-      "/courses/module1/section1/index.html": {
-        "options": {},
-        "value": {
-          "hashed": "a524119279c135ef659190938dfe46e2241e6cf5811a5eed30026a2c60644642",
-          "kind": "doc",
-          "meta": {
-            "collection_path": "/content/courses/course1/module1",
-            "locale": "en",
-            "pod_path": "/content/courses/course1/module1/section1.md"
-          },
-          "pod_path": "/content/courses/course1/module1/section1.md"
-        }
-      },
-      "/courses/module1/section2/index.html": {
-        "options": {},
-        "value": {
-          "hashed": "f06100f055580851ed47d3d498bc235fa42e4af8a3189328673e07789fb767b2",
-          "kind": "doc",
-          "meta": {
-            "collection_path": "/content/courses/course1/module1",
-            "locale": "en",
-            "pod_path": "/content/courses/course1/module1/section2.md"
-          },
-          "pod_path": "/content/courses/course1/module1/section2.md"
-        }
-      },
-      "/courses/module2/section1/index.html": {
-        "options": {},
-        "value": {
-          "hashed": "62596bdc9669ae177dc9a9468daa13194dde8537c39a2c8727ae41b9bbe43a07",
-          "kind": "doc",
-          "meta": {
-            "collection_path": "/content/courses/course1/module2",
-            "locale": "en",
-            "pod_path": "/content/courses/course1/module2/section1.md"
-          },
-          "pod_path": "/content/courses/course1/module2/section1.md"
-        }
-      },
-      "/courses/module2/section2/index.html": {
-        "options": {},
-        "value": {
-          "hashed": "36724d71f9c0b8d610393479efc7800a26e574312e9e8d89bba434dc47c6a0e5",
-          "kind": "doc",
-          "meta": {
-            "collection_path": "/content/courses/course1/module2",
-            "locale": "en",
-            "pod_path": "/content/courses/course1/module2/section2.md"
-          },
-          "pod_path": "/content/courses/course1/module2/section2.md"
-        }
-      },
-      "/courses/section1.md/section1/index.html": {
-        "options": {},
-        "value": {
-          "hashed": "a524119279c135ef659190938dfe46e2241e6cf5811a5eed30026a2c60644642",
-          "kind": "doc",
-          "meta": {
-            "collection_path": "/content/courses/course1/module1",
-            "locale": "en",
-            "pod_path": "/content/courses/course1/module1/section1.md"
-          },
-          "pod_path": "/content/courses/course1/module1/section1.md"
-        }
-      },
-      "/courses/section1/index.html": {
-        "options": {},
-        "value": {
-          "hashed": "a524119279c135ef659190938dfe46e2241e6cf5811a5eed30026a2c60644642",
-          "kind": "doc",
-          "meta": {
-            "collection_path": "/content/courses/course1/module1",
-            "locale": "en",
-            "pod_path": "/content/courses/course1/module1/section1.md"
-          },
-          "pod_path": "/content/courses/course1/module1/section1.md"
-        }
-      },
-      "/courses/section2.md/section2/index.html": {
-        "options": {},
-        "value": {
-          "hashed": "f06100f055580851ed47d3d498bc235fa42e4af8a3189328673e07789fb767b2",
-          "kind": "doc",
-          "meta": {
-            "collection_path": "/content/courses/course1/module1",
-            "locale": "en",
-            "pod_path": "/content/courses/course1/module1/section2.md"
-          },
-          "pod_path": "/content/courses/course1/module1/section2.md"
-        }
-      },
-      "/courses/section2/index.html": {
-        "options": {},
-        "value": {
-          "hashed": "f06100f055580851ed47d3d498bc235fa42e4af8a3189328673e07789fb767b2",
-          "kind": "doc",
-          "meta": {
-            "collection_path": "/content/courses/course1/module1",
-            "locale": "en",
-            "pod_path": "/content/courses/course1/module1/section2.md"
-          },
-          "pod_path": "/content/courses/course1/module1/section2.md"
         }
       },
       "/index.html": {

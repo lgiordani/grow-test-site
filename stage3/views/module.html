@@ -5,7 +5,7 @@
 {% block content %}
 {{ doc.html | safe }}
 <br>
-<p><a href="{{ g.collection('courses').get_doc(doc.collection.basename).url.path }}">Back to the course page</a></p>
+<p><a href="{{ g.collection(doc.collection.dirname).get_doc(doc.collection.basename).url.path }}">Back to the course page</a></p>
 <br>
 {% for section in g.collection(doc.collection.collection_path + '/' + doc.base).list_docs() %}
 <p><a href="{{ section.url }}">{{ section.title }}</a></p>

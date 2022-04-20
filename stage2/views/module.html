@@ -5,5 +5,5 @@
 {% block content %}
 {{ doc.html | safe }}
 <br>
-<p><a href="{{ g.collection('courses').get_doc(doc.collection.basename).url.path }}">Back to the course page</a></p>
+<p><a href="{{ g.collection(doc.collection.dirname).get_doc(doc.collection.basename).url.path }}">Back to the course page</a></p>
 {% endblock %}
